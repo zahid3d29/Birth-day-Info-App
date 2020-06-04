@@ -1,0 +1,1 @@
+plan 1 = When vistor first time use this app. They only need to put their Birth Date and Name. But 2nd time if they need to view their information again they have to put their email or specific id only. THey don't need to put name and Bdate again. 
