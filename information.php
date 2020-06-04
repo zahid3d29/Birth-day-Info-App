@@ -44,7 +44,7 @@
 
     <div class="container p-5">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8 offset-md-2">
                 <form class="main-form" action="information.php" method="post">
                     <div class="form-group">
                         <label for="usr">Your Name:</label>
@@ -55,7 +55,7 @@
                         <input class="form-control" type="date"  name="visitor_dob" value="" id="example-date-input">
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </form>
             </div>
         </div>
