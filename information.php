@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body class="main-body">
+<body class="main-body p-5">
 
     <div class="container p-5">
         <div class="row p-5">
