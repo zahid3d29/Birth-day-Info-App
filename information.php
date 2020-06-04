@@ -97,11 +97,11 @@
                   if( $visitorName && $visitorDob != 0  ){
                         switch( $monthOfDate ){
                             case "Jan":
-                                echo "<br><br><h2 class='heading-common'>About: $fulldate </h2><br>
+                                echo "<br><br><h2 class='heading-common'>What happening in this month: $fulldate </h2><br>
                                 <p class='info-text'>It was Tuesday, under the sign of Aquarius (see birth chart on January 29, 1991). The US president was George H. W. Bush (Republican), the UK Prime Minister was Sir John Major (Conservative), Pope St John Paul II was leading the Catholic Church. </p>
                                 ";
 
-                                echo "<br><h2 class='heading-common'>Historical Information</h2><br>";
+                                echo "<br><h2 class='heading-common'>Historical Information:</h2><br>";
                                 echo $historicalInfo;
                                 echo "</br></br>";
 
