@@ -43,9 +43,9 @@
 <body class="main-body p-5">
 
     <div class="container p-5">
-        <div class="row p-5">
+        <div class="row">
             <div class="col-md-6">
-                <form class="" action="information.php" method="post">
+                <form class="main-form" action="information.php" method="post">
                     <div class="form-group">
                         <label for="usr">Your Name:</label>
                         <input type="text" class="form-control" name="visitor_name" id="visitor_name">
