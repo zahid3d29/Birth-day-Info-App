@@ -110,7 +110,7 @@
                             break;
 
                             case "Feb":
-                                echo "It's FEBRUARY";
+                                echo "It's the month of FEBRUARY";
                             break;
 
                             case "Mar":
