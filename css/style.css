@@ -32,3 +32,9 @@ h2.error_note {
     transition: auto;
     transform-origin: left;
 }
+
+form.main-form {
+    width: 80%;
+    padding: 30px 30px;
+    border: 3px solid #eee;
+}
