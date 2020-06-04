@@ -35,8 +35,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link 
-    rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -44,7 +43,7 @@
 
     <div class="container p-5">
         <div class="row">
-            <div class="col-md-8 offset-md-2">
+            <div class="col-md-8 offset-md-2 m-5">
                 <form class="main-form" action="information.php" method="post">
                     <div class="form-group">
                         <label for="usr">Your Name:</label>
@@ -88,7 +87,6 @@
                 <?php
 
                     // Input date from visitor, convert date to number and show visitors
-
                     if( $visitorName && $visitorDob != 0 ){
                        echo "Hey <span class='visitorName'>" . $visitorName . "</span>" . " You were born on: ". "<span class='visitorBdmy'>" .  date('M d Y', strtotime("$visitorDob")) . "</span>" . '. And the day was:' . "<span class='visitorBd'>" . date(l, strtotime("$visitorDob")) . "</span><br>";
                     } else{
@@ -159,8 +157,6 @@
 
                   }
                     
-            
-                    
                 ?>
 
             </div>
@@ -169,9 +165,7 @@
 
    
 
-    <script 
-        src="js/bootstrap.min.js">
-    </script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
