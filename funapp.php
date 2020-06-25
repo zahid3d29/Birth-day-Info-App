@@ -7,18 +7,25 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-    rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>PHP Apps</title>
 </head>
 
 <body class="m-5 p-5">
     
-
+    <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12 p-5 border-right border-dark">
+                <h2 class="heading-top"> This is simple fun app made by basic of php </h2>
+                </div>
+            </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6 p-5 border-right border-dark">
+            
                 <form action="funapp.php" method="post">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Favorite Player?</label>
@@ -38,9 +45,8 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
             </div>
 
             <div class="col-md-6 p-3">
+
                 <?php
-
-
 
                     // Getting Form Input 
                     $favPlayer = $_POST["favplayer"];
@@ -75,14 +81,9 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
         </div>
     </div>
 
-    
-    <script type="text/javascript">
-        function mess(){
-            alert("Your Record is successfully  saved!");
-        }
-    </script>
+   
     <script 
-        src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        src="js/bootstrap.min.js"      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
 </body>

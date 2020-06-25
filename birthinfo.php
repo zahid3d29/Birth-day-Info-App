@@ -42,6 +42,14 @@
 <body class="main-body p-5">
 
     <div class="container p-5">
+        <div class="row text-center">
+            <div class="col-md-12 p-5 border-right border-dark">
+            <h2 class="heading-top"> This is simple fun app to check your Birth day history made by very basic of php </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-5">
         <div class="row">
             <div class="col-md-8 offset-md-2 m-5">
                 <form class="main-form" action="information.php" method="post">
