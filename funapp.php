@@ -1,3 +1,7 @@
+<?php 
+// Report simple running errors
+error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,15 +22,15 @@
                 <form action="funapp.php" method="post">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Favorite Player?</label>
-                        <input type="text" class="form-control" name="favplayer" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Player Name">
+                        <input type="text" class="form-control" name="favplayer" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shakib, Tamim, Gayle">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Favorite Actor?</label>
-                        <input type="text" class="form-control" name="favactor" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Actor Name">
+                        <input type="text" class="form-control" name="favactor" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Aamir, Salman, Writtik">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Favorite color:</label>
-                        <input type="text" class="form-control" name="favcolor" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Color Name">
+                        <input type="text" class="form-control" name="favcolor" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Red,Green,Blue">
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -36,41 +40,7 @@
             <div class="col-md-6 p-3">
                 <?php
 
-                    $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $dbname = "practice_php";
 
-                    // Create connection
-                    $conn = new mysqli($servername, $username, $password, $dbname);
-                    // Check connection
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                    }
-
-                   
-                    $sql = "INSERT IGNORE INTO user_favorite (player, actor, color)
-                        VALUES ('".$_POST["favplayer"]."','".$_POST["favactor"]."','".$_POST["favcolor"]."')";
-
-                    if ($conn->query($sql) === TRUE) {
-                        // echo "New record created successfully";
-                        
-                    } else {
-                        echo "Error: " . $sql . "<br>" . $conn->error;
-                    }
-                    // $sql = "SELECT player,actor,color FROM user_favorite";
-                    // $result = $conn->query($sql);
-
-                    // if ($result->num_rows > 0) {
-                    // // output data of each row
-                    // while($row = $result->fetch_assoc()) {
-                    //     echo "ID: " . $row["ID"] . " - Player name: " . $row["player"]. " - Favorite Actor: " . $row["actor"]. " - Color: " . $row["color"]. "<br>";
-                    // }
-                    // } else {
-                    // echo "0 results";
-                    // }
-
-                    $conn->close();
 
                     // Getting Form Input 
                     $favPlayer = $_POST["favplayer"];
@@ -83,7 +53,7 @@
 
                     $red = "<span style='color:red;text-decoration: underline; text-transform: uppercase;  font-size: 40px; font-weight: bold;'>Red</span> ";
                     $green = "<span style='color:green;text-decoration: underline; text-transform: uppercase;  font-size: 40px; font-weight: bold;'>Green</span> ";
-
+                    $blue = "<span style='color:blue;text-decoration: underline; text-transform: uppercase;  font-size: 40px; font-weight: bold;'>Blue</span> ";
                    // Showing form input 
                     switch($favColor){
                         case "Red":
@@ -92,6 +62,10 @@
 
                         case "Green":
                             echo "<h2>The " . ' ' . $green . ' ' . "is your Favorite Color</h2>";
+                        break;
+
+                        case "Blue":
+                            echo "<h2>The " . ' ' . $blue . ' ' . "is your Favorite Color</h2>";
                         break;
                     }
 
